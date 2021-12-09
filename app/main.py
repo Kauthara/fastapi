@@ -7,7 +7,7 @@ from .config import settings
 
 print(settings.database_hostname)
 
-models.Base.metadata.create_all(bind=engine)
+# models.Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
 
@@ -28,7 +28,7 @@ app.include_router(vote.router)
 
 @app.get("/")
 def get_posts():
-    return {"message": "Hello World today"}
+    return {"message": "Hello World New world"}
 
 
 
